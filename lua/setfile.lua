@@ -11,6 +11,12 @@ lvim.builtin.notify.active = true
 lvim.builtin.terminal.active = true
 lvim.builtin.nvimtree.setup.view.side = "right"
 lvim.builtin.nvimtree.setup.renderer.icons.show.git = true
+lvim.builtin.fancy_statusline = { active = true } -- enable/disable fancy statusline
+lvim.builtin.lualine.active = true
+
+if lvim.builtin.fancy_statusline.active then
+  require("custom-plugins.lualine").config()
+end
 
 -- Font
 vim.o.guifont = "FiraCode Nerd Font"
@@ -23,18 +29,18 @@ vim.o.fillchars = "eob: "
 
 -- if you don't want all the parsers change this to a table of the ones you want
 lvim.builtin.treesitter.ensure_installed = {
-	"bash",
-	"c",
-	"javascript",
-	"json",
-	"lua",
-	"python",
-	"typescript",
-	"tsx",
-	"css",
-	"rust",
-	"java",
-	"yaml",
+  "bash",
+  "c",
+  "javascript",
+  "json",
+  "lua",
+  "python",
+  "typescript",
+  "tsx",
+  "css",
+  "rust",
+  "java",
+  "yaml",
 }
 
 lvim.builtin.treesitter.ignore_install = { "haskell" }

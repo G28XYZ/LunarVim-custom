@@ -1,3 +1,3 @@
 require("custom-plugins.tokyonight")
-require("null-ls")
-require('lualine')
+require("custom-plugins.null-ls")
+require("custom-plugins.lualine")

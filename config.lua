@@ -9,9 +9,7 @@ an executable
 -- THESE ARE EXAMPLE CONFIGS FEEL FREE TO CHANGE TO WHATEVER YOU WANT
 
 require("init")
-
 require("mason").setup()
-
 
 -- unmap a default keymapping
 -- vim.keymap.del("n", "<C-Up>")
